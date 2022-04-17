@@ -1,12 +1,16 @@
-import React from 'react';
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
-    return (
-        <div>
-            <h1>This is Footer</h1>
-        </div>
-    );
+  const today = new Date();
+  const year = today.getFullYear();
+  return (
+    <footer className="text-center mt-5">
+      <p>
+        <small>copyright @ {year} </small>
+      </p>
+    </footer>
+  );
 };
 
 export default Footer;

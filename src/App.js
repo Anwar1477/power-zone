@@ -7,13 +7,14 @@ import Services from './components/Services/Services'
 import Blogs from './components/Blogs/Blogs'
 import About from './components/About/About'
 import LogIn from './components/Login/Login'
+import SignUp from './components/SignUp/SignUp'
 import NotFound from './components/NotFound/NotFound'
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -22,9 +23,10 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<LogIn></LogIn>}></Route>
-        <Route path='*' element={<NotFound></NotFound>}></Route>
-        
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route> 
       </Routes>
+    
       <Footer></Footer>
     
     </div>

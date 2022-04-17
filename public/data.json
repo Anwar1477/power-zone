@@ -1,0 +1,26 @@
+[
+  {
+    "postId": 1,
+    "id": "624a91ccc40d67fda2ebf2f3",
+    "picture": "https://www.byrdie.com/thmb/FvLhcsHsSX2lMa-mOtwUoF9jrnE=/1414x1414/smart/filters:no_upscale()/GettyImages-1289416088-351bf8ecc9c846be9419657522b625c6.jpg",
+    "price": "$200",
+    "name": "Weight Training",
+    "comment": "The benefits of lifting weights include building muscle, burning body fat, strengthening your bones and joints, reducing injury risk, and improving heart health. To lift weights safely, it's important to start slow, take rest days, and always use proper form."
+  },
+  {
+    "postId": 2,
+    "id": "624a91cc05967cf0ccf9cb5a",
+    "picture": "https://media.istockphoto.com/photos/male-personal-trainer-helping-sportswoman-to-do-exercises-with-at-picture-id972833328?k=20&m=972833328&s=612x612&w=0&h=LtGaklhIxyJbMkxEKDNWzGXgX-zmONE2-llVRDrv17c=",
+    "price": "$200",
+    "name": "Personal Training",
+    "comment": "Whether you’re new to exercising or a fitness pro, we’re here to provide you with personalized coaching and support inside and outside the club. Our professional programming, tools, and guidance will help you stay on track, reach your goals, and get to a healthier place."
+  },
+  {
+    "postId": 3,
+    "id": "624a91ccc877eec369f6474b",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVCO2n03Zrjy2P5mv7rGBkklRF6wU3guRrYQ&usqp=CAU",
+    "price": "$200",
+    "name": "Ladies Boxing",
+    "comment": "Boxing training is the ideal workout for everyone, especially women. Boxing is a full-body workout that benefits the body and mind. Here we’ll look at some of the common questions many women have about boxing training and try an intense 20-minute workout that will get you hooked."
+  }
+]

@@ -1,10 +1,11 @@
 import React from 'react';
 import './NotFound.css'
+import notFound from './../../Images/NotFound/404.jpg'
 
 const NotFound = () => {
     return (
-        <div>
-            <h1>This is not found area</h1>
+        <div className='container'>
+            <img className='w-100' src={notFound} alt="" />
         </div>
     );
 };
