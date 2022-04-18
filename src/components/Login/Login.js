@@ -3,7 +3,9 @@ import "./Login.css";
 import GoogleLogo from "../../Images/GoogleLogo/google.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
+  getAuth,
   GoogleAuthProvider,
+  sendEmailVerification,
   signInWithEmailAndPassword,
   signInWithPopup,
 } from "firebase/auth";
@@ -29,6 +31,13 @@ const Login = () => {
           navigate(from, {replace: true})
       })
   }
+
+  const auth = getAuth();
+sendEmailVerification(auth.currentUser)
+  .then(() => {
+    // Email verification sent!
+    // ...
+  });
 
   const googleAuth = () => {
     signInWithPopup(auth, provider)
@@ -59,6 +68,17 @@ const Login = () => {
 
     setPassword({ value: passwordInput, error: "" });
   };
+
+//   const resetPassword = async () => {
+//     const email = emailRef.current.value;
+//     if (email) {
+//         await sendPasswordResetEmail(email);
+//         toast('Sent email');
+//     }
+//     else{
+//         toast('please enter your email address');
+//     }
+// }
 
   const handleLogin = (event) => {
     event.preventDefault();
