@@ -1,9 +1,15 @@
+import { getAuth } from "firebase/auth";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
+import app from "../../FireBase/Firebase.init";
 import Services from "../HomePage/Services/Services";
 import './ServiceDetail.css'
 
+const auth = getAuth(app);
+
 const ServiceDetail = () => {
+  const [user] = useAuthState(auth); 
   const { serviceId, name, comment, price } = useParams();
   return (
     <div className="container">

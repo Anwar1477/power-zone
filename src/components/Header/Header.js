@@ -8,7 +8,7 @@ import "./Header.css";
 const Header = () => {
   const { pathname } = useLocation();
   const [currentUser, setCurrentUser] = useState({});
-  console.log(currentUser);
+  // console.log(currentUser);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -44,7 +44,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/home" className="link">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="#service" className="link">
+            <Nav.Link as={Link} to="/services" className="link">
               Service
             </Nav.Link>
             <Nav.Link as={Link} to="/about" className="link">

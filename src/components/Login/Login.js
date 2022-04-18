@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import GoogleLogo from "../../Images/GoogleLogo/google.svg";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   GoogleAuthProvider,
   signInWithEmailAndPassword,
@@ -10,13 +10,25 @@ import {
 import { auth } from "../../FireBase/Firebase.init";
 import toast from "react-hot-toast";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 const provider = new GoogleAuthProvider();
 
 const Login = () => {
+  const [signInWithGoogle, user] = useSignInWithGoogle(auth)
+  const location = useLocation();
   const navigate = useNavigate();
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
+
+  const from = location?.state?.from?.pathname || '/';
+    
+  const handleGoogleSignIn = () =>{
+      signInWithGoogle()
+      .then( () =>{
+          navigate(from, {replace: true})
+      })
+  }
 
   const googleAuth = () => {
     signInWithPopup(auth, provider)
@@ -110,7 +122,7 @@ const Login = () => {
               </p>
             )}
           </div>
-          <button type="submit" className="auth-form-submit">
+          <button  onClick={handleGoogleSignIn} type="submit" className="auth-form-submit">
             Login
           </button>
         </form>

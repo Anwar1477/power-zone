@@ -10,6 +10,7 @@ import SignUp from './components/SignUp/SignUp'
 import NotFound from './components/NotFound/NotFound'
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Service from './components/HomePage/Service/Service';
+import Services from './components/HomePage/Services/Services';
 
 
 
@@ -20,7 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage></HomePage>}></Route>
         <Route path='/home' element={<HomePage></HomePage>}></Route>
-        <Route path='/service' element={<Service></Service>}></Route>
+        <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/services/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path='/services/:name' element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path='/services/:comment' element={<ServiceDetail></ServiceDetail>}></Route>
