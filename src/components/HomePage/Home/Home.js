@@ -1,9 +1,10 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./Home.css";
-import banner1 from "../../Images/Banner/banner (1).jpg";
-import banner2 from "../../Images/Banner/banner (2).jpg";
-import banner3 from "../../Images/Banner/banner (3).jpg";
+import banner1 from '../../../Images/Banner/banner (2).jpg'
+import banner2 from "../../../Images/Banner/banner (2).jpg";
+import banner3 from "../../../Images/Banner/banner (3).jpg";
+import Services from '../../HomePage/Services/Services'
 
 const Home = () => {
   return (
@@ -41,6 +42,7 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    <Services></Services>
     </div>
   );
 };

@@ -1,0 +1,48 @@
+/* .reviews-container-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+
+}
+.review-container img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    
+}
+.comment{
+    font-size: 14px;
+}
+.per-review{
+    background-color: gray;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+ */
+ .service-title{
+     text-align: center;
+     color: tomato;
+     margin-top: 20px;
+ }
+ .line{
+     width: 50%;
+ }
+ .services-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 20px;
+ }
+
+ /* Use Media Query  */
+
+ @media only screen and (max-width:576px){
+     .services-container{
+        grid-template-columns: repeat(1, 1fr);
+
+     }
+     
+ }
+
+
